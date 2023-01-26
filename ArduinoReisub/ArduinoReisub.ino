@@ -9,8 +9,10 @@ boot sequence to a Linux host.
 ##### To develop and/or test this on Linux, by all means disable #####
 ##### the SysRq invocations used by this sketch:                 #####
 
-- sudo sysctl kernel.sysrq=256 
+- sudo sysctl kernel.sysrq=256
 - Kernel will print warning messages only. -> sudo dmesg -w
+- A reasonable production setting for kernel.sysrq that enables the
+  S, U and B actions is kernel.sysrq=176
 
 Reading materials:
 
